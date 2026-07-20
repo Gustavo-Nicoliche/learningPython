@@ -8,6 +8,24 @@ nota = 7.5 #(float)
 frase = 'Hello World' #(str)
 estudando = True #1(bool)
 
+''' Escopo de variáveis
+Quando se cria uma variável dentro de uma função, mesmo que ela tenha o mesmo nome
+fora de uma função, e para ambas sejam atribuídos valores diferentes, ela pode ter
+valores diferentes nos diferentes escopos:
+
+def funcao(a, b)
+    a = 10
+    print(a)
+    b = 5
+    print(b)
+
+a = 5
+b = 10
+
+-> nesse caso, "a" dentro da função vale 10, fora vale 5, e "b" dentro vale 5,
+fora vale 10.
+'''
+
 # CONDICIONAIS - of elif else
 
 trabalho_terminado = False

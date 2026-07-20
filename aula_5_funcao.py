@@ -1,6 +1,6 @@
 # CRIANDO FUNÇÕES
 
-'''
+''' Conceito
 Podemos definir uma função com comandos criados iniciando com "def":
 
 def mostraLinha():
@@ -13,6 +13,7 @@ Uma forma mais fácil de colocar um caractere repetido é:
     print('-' * 30)
 
 '''
+
 def lin():
     print('-' * 5)
 
@@ -21,7 +22,7 @@ lin()
 print('Acima tem uma função')
 lin()
 
-'''
+''' Outro exemplo
 Outro exemplo é atribuir parâmetros para a função, simplifiando ainda mais seu uso:
 
 Vamos supor que se queira usar uma função para exibir um título, formatado com as
@@ -71,7 +72,7 @@ soma(4, 6)
 soma(1, 4)
 soma(9, 90)
 
-'''
+''' Boa prtática
 É uma boa prática recolher a função, dessa forma mostra-se que ela está
 ali, mas oculta-se seu conteúdo.
 '''
@@ -81,7 +82,7 @@ separar()
  
 # EMPACOTANDO VALORES
 
-'''
+''' Empacotamento
 Nesse exemplo, usa-se  "*" para fazer com que o programa possa receber
 diversas quantidades distinhas de parâmetros, no caso de uma soma.
 Independente de quantos números forem escritos, o programa concluirá a soma.
@@ -139,3 +140,59 @@ def somar(* numeros): # criou a função e nomeou o parâmetro
 somar(4, 5)
 somar(6, 2, 7)
 somar(5, 8, 50, 3)
+
+
+separar()
+# PARÂMETROS OPCIONAIS
+
+def calcular(a, b, c):
+    s = a + b + c
+    print(f'A soma vale{s}')
+
+
+calcular(2, 3, 5)
+
+''' Explicação:
+
+Na função acima, pede-se 3 parâmetros e entrega-se 3 parâmetros na execução.
+Mas se passarmos um parâmetro a menos, não funcionará:
+
+calcular(2, 3)
+
+Para evitar esse erro, atribui-se um valor previamente ao parâmetro:
+
+"def calcular(a, b, c=0)"
+
+ou
+
+"def calcular(a=0, b=0 ,c=0)
+'''
+
+separar()
+
+# RETURN
+
+''' RETURN
+
+Para "concatenar a informação" em uma linha somente, se fizermos trÊs chamadas, por
+exemplo, de uma função que efetue uma conta, precisamos usar o RETURN.
+
+Ele faz o armazenamento, em outra variável, do valor atribuído à variável que recebe
+o produto da multiplicação:
+
+'''
+
+def multiplique(a=0, b=0, c=0):
+    p = a * b * c
+    return p
+
+produto1 = multiplique(5, 3, 2)
+produto2 = multiplique(10, 4, 5)
+produto3 = multiplique(1, 4, 6)
+
+print(f' Os resiltados foram {produto1}, {produto2} e {produto3}')
+
+''' Explicação:
+Nesse caso, usar return para capturar o resultado de a*b*c e armazenar
+em variáveis globais.
+'''
