@@ -196,3 +196,4 @@ print(f' Os resiltados foram {produto1}, {produto2} e {produto3}')
 Nesse caso, usar return para capturar o resultado de a*b*c e armazenar
 em variáveis globais.
 '''
+
