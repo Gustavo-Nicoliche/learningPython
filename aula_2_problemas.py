@@ -2,8 +2,7 @@
 # Escreva um programa que retorna o valor hora de um funcionário
 # com base no seu salário mensal e horas trabalhadas por mês.
 
-'''
-Usando metodo 5Q:
+''' Usando metodo 5Q:
 1. Quais são os dados de entrada?
 -  Salário mensal do funcionário (float);
 -  Horas trabalhadas por mês (float);
@@ -22,7 +21,6 @@ valor hora = salário mensal / horas trabalhadas
 exibir valor hora
 '''
 
-
 '''
 salario = float(input('Qual é o seu salário mensal? '))
 horas = float(input('Quantas horas você trabalha por mês? '))
@@ -36,8 +34,7 @@ print(valor_hora)
 #PROBLEMA 2 -
 # Crie um programa que recebe dois valores e exibe qual é o maior entre eles.
 
-'''
-Usando método 5Q:
+''' Usando método 5Q:
 
 1. Quais sáo os dados de entrada?
 - o primeiro valor
@@ -69,14 +66,12 @@ else:
     print(f'o maior valor é: {segundo_valor}')
 '''
 
-
 ###########################################
 
 # PROBLEMA 3 -
 # Crie um programa que recebe um valor inteiro e exibe se ele é positivo, negativo ou neutro.
 
-'''
-Usando método 5Q:
+''' Usando método 5Q:
 
 1. Quais são os dados de entrada?
 - Um valor inteiro
@@ -116,8 +111,7 @@ else:
 # PROBLEMA 4 -
 # crie um programa que recebe cinco valores dentro de uma lista e imprime somente os valores que sejam pares
 
-'''
-Usando método 5Q:
+''' Usando método 5Q:
 1. Quais são os dados de entrada?
 - Uma lista de cinco valores inteiros
 2. O que devo fazer com esses dados?
@@ -152,8 +146,7 @@ for valor in valores:
 # Crie um problema que verifica se todas as senhas digitadas por usuários são válidas.
 # As senhas precisam ter no mínimo 8 caracteres, uma letra maiúscula e um número.
 
-'''
-Usando método 5Q:
+''' Usando método 5Q:
 
 1. Quais são os dados de entrada?
 - Senhas digitadas pelos usuários
@@ -194,8 +187,7 @@ for senha in senhas:
 # Se errar as 3 tentativas o programa deve exibir " Aguarde 30 minutos para tentar novamente"
 # Se o usuário acertar o login antes disso, exibir "Bem-vindo ao sistema"
 
-'''
-Usando método 5Q:
+''' Usando método 5Q:
 
 1. Quais são os dados de entrada?
 - Nome de usuário digitado
@@ -241,8 +233,7 @@ else:
 # PROBLEMA 7 -
 # Crie um programa que, dada uma lista de salários, calcule o total pago a todos os funcionarios
 
-'''
-Usando método 5Q:
+''' Usando método 5Q:
 
 1. Quais são os dados de entrada?
 - Uma lista de salários
@@ -259,10 +250,11 @@ Somar cada valor da lista até obter o total
 Exibir o total gasto com os pagamentos
 '''
 
+'''
 salarios = [2500, 3350, 4200, 4000, 5000]
 total_salarios = 0
 for salario in salarios:
     total_salarios = total_salarios + salario
 
 print(total_salarios)
-
+'''
