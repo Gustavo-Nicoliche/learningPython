@@ -1,10 +1,4 @@
-def line():
-    print("~" * 45)
-
-def separar():
-    print(' ')
-    print(" -=- " * 10)
-    print(' ')
+from useful import separar, line
 
 # DESAFIO 01
 
@@ -125,7 +119,6 @@ print('Obrigado pela resposta!')
 line()
 print(f'{fatorial(numero, show)}')
 line()
-
 
 separar()
 

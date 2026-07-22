@@ -6,8 +6,7 @@
 # O programa deve informar se o chute foi maior, menor ou igual ao valor aleatório
 # gerado no início.
 
-'''
-Usando método 5Q:
+''' Usando método 5Q:
 1. Quais são os dados de entrada necessários?
 - o sistema pede um número
 

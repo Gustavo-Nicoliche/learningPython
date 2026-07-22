@@ -46,9 +46,9 @@ titulo('   ESTUDANDO PYTHON    ')
 
 titulo('    HELLO WORLD    ')
 
-'''
-Para facilitar a leitura na execução do programa, vamos criar uma linha com uma função
-'''
+# Para facilitar a leitura na execução do programa, vamos criar uma linha com uma função
+
+
 def separar():
     print(' ')
     print('#' * 70)
@@ -127,9 +127,8 @@ print(valores)
 separar()
 ########################################################################
 
-'''
-SOMAR
-'''
+# SOMAR
+
 def somar(* numeros): # criou a função e nomeou o parâmetro
     resultado = 0     # iniciou a variável do resultado para ir recebendo as somas
     for numero in numeros:   # criou o FOR com o iterador NUMERO que rodará pelos parametros, independente de quantidade

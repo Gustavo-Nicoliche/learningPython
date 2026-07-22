@@ -167,7 +167,6 @@ e imprima na tela no programa principal.
 1. Quais são as entradas de dados?
 - numero
 
-
 2. O que devo fazer com esses dados?
 - inserir na função fatorial() que calcula o fatorial do numero recebido
 
@@ -185,9 +184,6 @@ e imprima na tela no programa principal.
 - definir o laço FOR com método RANGE
 - retornar o resultado em uma variável
 imprimir no programa principal o resultado.
-
-
-
 '''
 
 def fatorial(num=1):

@@ -2,8 +2,7 @@
 
 # Criar um programa que receba um número e imprima o seu fatorial.
 
-'''
-Usando método 5Q:
+''' Usando método 5Q:
 
 1. Quais são os dados de entrada?
 - um número inteiro
