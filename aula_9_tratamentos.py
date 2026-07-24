@@ -75,7 +75,11 @@ Nesse naso acima, ao incluir "except:" o erro que o python acusaria no terminal
 é escrito pelo desenvolvedor e substuído pelo mesmo. O erro foi tratado de forma
 generalizada, mas é possível tratar cada tipo de erro particularmente, incluindo
 a EXCEPTION e tratando cada exception individualmente, usando quandos EXCEPTs
-forem necessários
+forem necessários.
+
+Também é possível mostrar qual foi o erro apontado pelo python ao usar Exception
+ao lado de except, seguido de "as erro". Então cita-se a classe, a causa, o atributo, etc.
+
 '''
 
 try:
@@ -88,6 +92,8 @@ except ZeroDivisionError:
     print('Não é possível dividir por zero!')
 except KeyboardInterrupt:
     print('O usuário preferiu não informar os dados!')
+except Exception as erro:
+    print(f'O erro encontrado foi {erro.__class__}.')
 else:
     print(f'O resultado é {r}')
 finally:
