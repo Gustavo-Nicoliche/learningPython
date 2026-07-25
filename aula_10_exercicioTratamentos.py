@@ -23,3 +23,10 @@ def leiaInt(n):
     print('Obrigado por usar o programa!')
 
 leiaInt(n=None)
+
+# DESAFIO TRATAMENTO DE ERROS 2
+
+''' Enunciado:
+
+Crie um código em PYthon que teste se o site PUdim está acessível no computador usado.
+'''
