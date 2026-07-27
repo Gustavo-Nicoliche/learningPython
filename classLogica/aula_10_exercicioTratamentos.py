@@ -30,3 +30,12 @@ leiaInt(n=None)
 
 Crie um código em PYthon que teste se o site PUdim está acessível no computador usado.
 '''
+import urllib
+import urllib.request
+
+try:
+    site = urllib.request.urlopen('https://youtube.com')
+except Exception as erro:
+    print(f'Deu erro: {erro}')
+else:
+    print('Tudo certo')

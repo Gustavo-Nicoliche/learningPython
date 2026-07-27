@@ -1,4 +1,4 @@
-from useful import separar, line
+from classLogica.useful import separar, line
 
 # DESAFIO 01
 
