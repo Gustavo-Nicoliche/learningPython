@@ -27,7 +27,10 @@ def lerArquivo(nome):
         header('Erro ao ler o arquivo')
     else:
         header('LISTA DE PESSOAS ')
-        print(a.read())
+        for linha in a:
+            dado = linha.split(';')
+            dado[1] = dado[1].replace('\n', '')
+            print(f'{dado[0]:<30}{dado[1]:>3} anos')
     finally:
         a.close()
 
@@ -43,5 +46,5 @@ def cadastrar(arq, nome='desconhecido', idade=0):
         except:
             header('Houve um erro na escritura dos dados')
         else:
-            header('Nome adicionado')
+            print(f'{nome} foi adicionado!')
         a.close()
