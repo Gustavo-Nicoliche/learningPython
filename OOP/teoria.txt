@@ -1,0 +1,105 @@
+Sistemas Orientados a Objetos:
+
+Confiabilidade:
+- O isolamento entre as partes gera algo mais seguro. Ao alterar uma das partes,
+nenhuma outra é afetada.
+
+Oportunidade:
+- Ao dividir tudo em partes, cada uma delas pode ser desenvolvida em paralelo.
+
+Manutenibilidade:
+- Atualizar é mais fácil. Uma pequena alteração vai beneficiar todas as partes
+relacionadas.
+
+Extensibilidade:
+- Um sistema não deve ser estático, tudo deve mudar e crescer para permanecer útil.
+
+Reusabilidade:
+- Objetos que foram criados para um sistema podem ser aproveitados em outros Sistemas.
+
+Naturalidade:
+- Mais fácil de entender. Maior atenção às funcionalidades do que aos detalhes de
+implementação.
+
+-------------------------------------------------------------------------------------
+
+Classe: simbolizam "formas"(de formato) para ciração de objetos.  
+- Determina-se em uma classe: nome, características próprias, coisas que pode fazer.
+-exemplo: 
+    nome - Biscoito.
+    # características:
+        + tamanho
+        + massa
+        + peso
+        + cobertura
+        + cozido
+        + temperatura
+    # métodos:
+        + cozinhar()
+        + congelar()
+        + cobrir()
+        + confeitar()
+        + podeCOmer()
+
+Instância: Seguir o padrâo que foi definido na classe para criar um objeto.
+Instanciar um a classe.
+- O objeto é a instância de uma classe. Pode-se ter mais de um objeto do mesmo tipo.
+
+Objeto: " Coisa material ou abstrata que é feita a partir de uma classe e pode ser
+descrita por meio das suas características (atributos), comportamentos (métodos) e
+estado atual "
+
+-exemplo: 
+    nome - Biscoito.
+    # características:
+        + tamanho = 8cm
+        + massa = baunilha
+        + peso = 54g
+        + cobertura = pistache
+        + cozido = True
+        + temperatura = 55°C
+
+Os valores das características tamanho, massa, peso, etc, compõem o ESTADO do objeto.
+
+Objeto Abstrato                /    Objeto abstrato.
+
+classe: flor                   /    classe: internet
+# atributos:                   /    # atributos:
++ especie = orqídea            /    + Operadora = Claro
++ cor = roxa                   /    + alcance = 10m
++ tamanho = 30cm               /    + conexão = True
++ pólen = True                 /    + potência = 5GHz
+# métodos:                     /    # métodos:
++ florescer()                  /    + conectar()
++ crescer()                    /    + desconectar()
++ hidratar()                   /    + deseligar()
++ podar()                      /    + ligar()
+
+-------------------------------------------------------------------------------------
+
+variaveis simples: guardar um valor
+variáveis compostas: guardar mais valores
+objetos: guardar valores e funcionalidades
+
+-------------------------------------------------------------------------------------
+
+% Declarar classe (sintaxe):
+
+class NomeClasse:  --> com a primeira letra maiuscula.
+    % atributos
+
+    % métodos:
+
+% Declarar objeto (sintaxe):
+objeto = MinhaClasse()  --> incianciando um novo objeto a partir da classe, chamando 
+                            um método construtor:
+                            def __init__(self): --> DunderMethod ( double under)
+
+-------------------------------------------------------------------------------------
+
+def __str__(self):  #Dunder Method que originalmente mostra o endereço na memória
+aplicação: print(obj) --> mostrará o que for definido pelo dev em 'return'
+
+print(obj.__dict__) # Dunder Attribute que traz os atributos em forma de dicionario
+print(obj.__getstate__()) # Dunder Method com a mesma funcionalidade de __dict__
+-> em __getstate__ você pode apresentar os dados em formatação diferente
