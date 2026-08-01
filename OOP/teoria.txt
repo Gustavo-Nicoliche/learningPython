@@ -102,4 +102,20 @@ aplicação: print(obj) --> mostrará o que for definido pelo dev em 'return'
 
 print(obj.__dict__) # Dunder Attribute que traz os atributos em forma de dicionario
 print(obj.__getstate__()) # Dunder Method com a mesma funcionalidade de __dict__
--> em __getstate__ você pode apresentar os dados em formatação diferente
+-> em __getstate__ você pode apresentar os dados em formatação diferente0
+
+------------------------------------------------------------------------------------
+
+rich.readthedocs.io -> biblioteca
+
+importar o rich ->
+
+from rich import ''
+(print)
+(table) -> from rich.table import Table
+(panel) -> from rich.panel import Panel
+(inspect) - inspect(int) +opc: all=true
+(install) -> from rich.traceback import install
+             install()
+
+             
