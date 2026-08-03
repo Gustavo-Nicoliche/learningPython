@@ -87,9 +87,9 @@ objetos: guardar valores e funcionalidades
 
 class NomeClasse:  --> com a primeira letra maiuscula.
     % atributos
-
+        def __init__(self):
     % métodos:
-
+        def metodo:
 % Declarar objeto (sintaxe):
 objeto = MinhaClasse()  --> incianciando um novo objeto a partir da classe, chamando 
                             um método construtor:
