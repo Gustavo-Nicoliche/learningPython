@@ -22,7 +22,11 @@ class Gamer:
 
     def exibirFicha(self):
         conteudo = f'[green]Player {self.nick}[/]\n'
-        conteudo += f'[blue]{self.favoritos}[/]\n'
+        conteudo += ' \n'
+        conteudo += '[blue]LISTA DE JOGOS FAVORITOS[/]\n'
+        conteudo += f'\n'.join(self.favoritos)
+        conteudo += ' \n'
+        conteudo += '[blue]FIM DA LISTA[/]\n'
         conteudo += ' \n'
         conteudo += ':fireworks: Muito obrigado por jogar com a gente! :fireworks:'
         ficha = Panel(conteudo, width=80, style="yellow", title="FICHA DO JOGADOR")
